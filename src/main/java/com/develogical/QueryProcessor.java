@@ -6,6 +6,12 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("romeo and juliet")) {
             return "William Shakespeare";
         }
+        if (query.toLowerCase().contains("what is ")) {
+        	
+        	String[] parts = query.split(" ");
+        	Integer t = Integer.parseInt(parts[3]) + Integer.parseInt(parts[3]);
+        	return t.toString();
+        }
         if (query.toLowerCase().contains("what is 4 plus 16")) {
             return "20";
         }
