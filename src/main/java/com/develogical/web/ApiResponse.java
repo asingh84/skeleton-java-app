@@ -11,7 +11,7 @@ public class ApiResponse {
     public ApiResponse(String answer) {
         this.answer = answer;
     }
-
+    //just adding comment
     public void writeTo(HttpServletResponse resp) throws IOException {
         resp.setContentType("text/plain");
         PrintWriter writer = resp.getWriter();
