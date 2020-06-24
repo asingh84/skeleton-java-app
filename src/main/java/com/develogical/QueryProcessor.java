@@ -9,7 +9,7 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("what is ")) {
         	
         	String[] parts = query.split(" ");
-        	Integer t = Integer.parseInt(parts[3]) + Integer.parseInt(parts[3]);
+        	Integer t = Integer.parseInt(parts[3]) + Integer.parseInt(parts[5]);
         	return t.toString();
         }
         return "";
